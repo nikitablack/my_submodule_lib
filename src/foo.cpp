@@ -1,4 +1,5 @@
 #include <iostream>
+#include <foo.hpp>
 
 void foo()
 {
