@@ -5,5 +5,5 @@ void foo()
 {
     constexpr int32_t LIB_VERSION{1};
 
-    std::cout << "My Submodule Lib " << LIB_VERSION << std::endl;
+    std::cout << "My Submodule Lib Version: " << LIB_VERSION << std::endl;
 }
