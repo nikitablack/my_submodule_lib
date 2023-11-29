@@ -1,5 +1,10 @@
 cmake_minimum_required(VERSION 3.18 FATAL_ERROR)
 
+# the necessary check to avoid name collisions if the target is used in multiple places (e.g. in submodules)
+if(TARGET submodule_lib)
+    return()
+endif()
+
 project(submodule_lib LANGUAGES CXX)
 
 add_library(submodule_lib SHARED
